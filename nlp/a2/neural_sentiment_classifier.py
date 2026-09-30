@@ -34,10 +34,10 @@ def _parse_args():
     parser.add_argument('--word_vecs_path', type=str, default='data/glove.6B.300d-relativized.txt', help='path to word embeddings to use')
     # Some common args have been pre-populated for you. Again, you can add more during development, but your code needs
     # to run with the default neural_sentiment_classifier for submission.
-    parser.add_argument('--lr', type=float, default=0.001, help='learning rate')
-    parser.add_argument('--num_epochs', type=int, default=10, help='number of epochs to train for')
-    parser.add_argument('--hidden_size', type=int, default=100, help='hidden layer size')
-    parser.add_argument('--batch_size', type=int, default=1, help='training batch size; 1 by default and you do not need to batch unless you want to')
+    parser.add_argument('--lr', type=float, default=0.003, help='learning rate')
+    parser.add_argument('--num_epochs', type=int, default=3, help='number of epochs to train for')
+    parser.add_argument('--hidden_size', type=int, default=256, help='hidden layer size')
+    parser.add_argument('--batch_size', type=int, default=32, help='training batch size')
     args = parser.parse_args()
     return args
 

@@ -77,3 +77,4 @@ def sgd_test_quadratic(args):
 if __name__ == '__main__':
     args = _parse_args()
     sgd_test_quadratic(args)
+    #done
